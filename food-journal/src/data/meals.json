@@ -1,0 +1,105 @@
+{
+  "data": {
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Avocado Toast",
+        "description": "Whole grain toast topped with mashed avocado, cherry tomatoes, and a poached egg.",
+        "calories": 350,
+        "protein": 12,
+        "carbs": 35,
+        "fat": 20,
+        "type": "breakfast",
+        "coverImage": "/images/Avocado-Egg-Breakfast-Toast-FI-Thumbnail-1200X1200.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Greek Yogurt Parfait",
+        "description": "Creamy Greek yogurt layered with crunchy granola, fresh mixed berries, and a drizzle of honey for natural sweetness.",
+        "calories": 280,
+        "protein": 15,
+        "carbs": 40,
+        "fat": 8,
+        "type": "breakfast",
+        "coverImage": "/images/Greek-Yogurt-Parfait.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Mediterranean Bowl",
+        "description": "Brown rice bowl with grilled chicken, hummus, cucumber, tomatoes, and feta cheese.",
+        "calories": 420,
+        "protein": 28,
+        "carbs": 45,
+        "fat": 16,
+        "type": "lunch",
+        "coverImage": "/images/Mediterranean-Hummus-Bowl.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Chicken Caesar Salad",
+        "description": "Romaine lettuce with grilled chicken, parmesan cheese, croutons, and Caesar dressing.",
+        "calories": 390,
+        "protein": 32,
+        "carbs": 25,
+        "fat": 20,
+        "type": "lunch",
+        "coverImage": "/images/chicken-caesar-salad.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Grilled Salmon",
+        "description": "Grilled salmon fillet seasoned with herbs and lemon, served with roasted asparagus and sweet potato wedges.",
+        "calories": 520,
+        "protein": 35,
+        "carbs": 45,
+        "fat": 25,
+        "type": "dinner",
+        "coverImage": "/images/featured-grilled-salmon.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Vegetable Stir Fry",
+        "description": "Colorful vegetable stir fry with tofu and brown rice.",
+        "calories": 480,
+        "protein": 20,
+        "carbs": 60,
+        "fat": 18,
+        "type": "dinner",
+        "coverImage": "/images/Easy-Vegetable-Stir-Fry.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Beef and Broccoli",
+        "description": "Tender beef strips with broccoli in a savory sauce, served with brown rice.",
+        "calories": 550,
+        "protein": 38,
+        "carbs": 50,
+        "fat": 22,
+        "type": "dinner",
+        "coverImage": "/images/Beef-and-Broccoli.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Quinoa Salad Bowl",
+        "description": "Nutritious quinoa bowl with roasted vegetables and grilled chicken.",
+        "calories": 450,
+        "protein": 30,
+        "carbs": 45,
+        "fat": 18,
+        "type": "lunch",
+        "coverImage": "/images/salmon-quinoa-salad.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Turkey Wrap",
+        "description": "Whole wheat wrap filled with turkey, avocado, and fresh vegetables.",
+        "calories": 380,
+        "protein": 25,
+        "carbs": 40,
+        "fat": 15,
+        "type": "lunch",
+        "coverImage": "/images/spinach-turkey-wrap.jpg"
+      }
+    ]
+  }
+}
