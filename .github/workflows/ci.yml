@@ -33,4 +33,10 @@ jobs:
     
     - name: Build project
       run: npm run build
-      working-directory: ./food-journal 
+      working-directory: ./food-journal
+
+    - name: Run tests
+      run: npm test
+      working-directory: ./food-journal
+      env:
+        CI: true 
