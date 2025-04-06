@@ -10,8 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-	title: "Food Journal",
-	description: "Track your meals and recipes",
+	title: "WhatsBarryCooking",
+	description: "Find recipes and cook with Barry",
 };
 
 export default function RootLayout({
