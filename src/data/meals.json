@@ -59,7 +59,7 @@
       {
         "id": 6,
         "name": "Vegetable Stir Fry",
-        "description": "Colorful vegetable stir fry with tofu and brown rice.",
+        "description": "Colorful vegetable stir fry featuring crisp broccoli, carrots, snap peas, and bell peppers, with pan-seared tofu cubes served over fluffy brown rice and drizzled with a savory ginger-soy sauce.",
         "calories": 480,
         "protein": 20,
         "carbs": 60,
@@ -81,7 +81,7 @@
       {
         "id": 8,
         "name": "Quinoa Salad Bowl",
-        "description": "Nutritious quinoa bowl with roasted vegetables and grilled chicken.",
+        "description": "A protein-rich quinoa bowl featuring fluffy quinoa, tender grilled chicken breast, and a colorful medley of roasted seasonal vegetables including sweet bell peppers, zucchini, and cherry tomatoes, topped with fresh herbs and a light lemon vinaigrette.",
         "calories": 450,
         "protein": 30,
         "carbs": 45,
@@ -92,7 +92,7 @@
       {
         "id": 9,
         "name": "Turkey Wrap",
-        "description": "Whole wheat wrap filled with turkey, avocado, and fresh vegetables.",
+        "description": "Whole wheat wrap filled with sliced turkey breast, creamy avocado, crisp lettuce, juicy tomatoes, crunchy cucumbers, and red onions, drizzled with a light herb-infused yogurt dressing.",
         "calories": 380,
         "protein": 25,
         "carbs": 40,
