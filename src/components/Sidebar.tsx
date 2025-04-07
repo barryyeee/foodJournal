@@ -32,7 +32,7 @@ const Sidebar = () => {
           ${
 						isOpen ? "translate-y-0" : "-translate-y-full"
 					} md:translate-y-0 md:w-64 md:left-0`}>
-				<div className="flex flex-col h-full p-4 md:pt-4 pt-6 gap-6 md:gap-4">
+				<div className="flex flex-col p-4 md:pt-4 pt-6 gap-6 md:gap-4">
 					<Image
 						src="/images/whatsbarrycooking.png"
 						alt="whatsbarrycooking"
@@ -47,14 +47,18 @@ const Sidebar = () => {
 								return (
 									<li key={tab.name}>
 										<Link
-											href={`/${tab.name.toLowerCase()}`}
+											href={href}
 											className={`block text-center md:text-left font-medium px-4 py-2 rounded-md transition-colors
                       ${
 												pathname === href
 													? "bg-[var(--color-primary)] text-white"
 													: "text-gray-700 hover:bg-gray-100"
 											}`}
-											onClick={() => setIsOpen(false)}>
+											onClick={() => {
+												if (isOpen) {
+													setIsOpen(false);
+												}
+											}}>
 											{tab.name}
 										</Link>
 									</li>
