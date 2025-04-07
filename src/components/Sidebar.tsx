@@ -28,7 +28,7 @@ const Sidebar = () => {
 
 			{/* Sidebar */}
 			<div
-				className={`fixed top-0 left-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-40
+				className={`fixed top-0 left-0 h-fit md:h-full w-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-40
           ${
 						isOpen ? "translate-y-0" : "-translate-y-full"
 					} md:translate-y-0 md:w-64 md:left-0`}>
@@ -53,7 +53,8 @@ const Sidebar = () => {
 												pathname === href
 													? "bg-[var(--color-primary)] text-white"
 													: "text-gray-700 hover:bg-gray-100"
-											}`}>
+											}`}
+											onClick={() => setIsOpen(false)}>
 											{tab.name}
 										</Link>
 									</li>
