@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WhatsBarryCooking
 
-## Getting Started
+## Project Overview
+WhatsBarryCooking is a modern web application built with Next.js, React, and TypeScript. Check the live website on https://whatsbarrycooking.vercel.app/.
 
-First, run the development server:
+### Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15.2.4**: React framework for server-rendered applications
+- **TailwindCSS**: Utility-first CSS framework
+- **Jest**: Testing framework
+
+## Project Setup and Structure
+
+### Prerequisites
+- Node.js (v20.x or higher)
+- npm (Node Package Manager)
+- Git
+
+### Directory Structure
+```
+whatsbarrycooking/
+├── src/                
+│   ├── app/            # App router
+│   ├── components/     # UI components 
+│   └── data/           # Mock data 
+├── public/             # Image assets
+├── package.json        
+└── README.md          
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Getting Started
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+## Git Workflow
 
-To learn more about Next.js, take a look at the following resources:
+### Initializing Git
+1. Initialize a new Git repository:
+   ```bash
+   git init
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Add remote repository:
+   ```bash
+   git remote add origin https://github.com/barryyeee/whatsbarrycooking.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Making Meaningful Commits
+1. Create a new branch for your feature:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-## Deploy on Vercel
+2. Stage your changes:
+   ```bash
+   git add .
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Commit with a descriptive message:
+   ```bash
+   git commit -m "add new feature description"
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Push your changes:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+## CI/CD Configuration
+
+The project uses GitHub Actions for continuous integration and deployment. The workflow is defined in `.github/workflows/ci.yml`.
+
+### CI/CD Pipeline Steps
+1. **Trigger Conditions**:
+   - On push to main branch
+   - On pull requests to main branch
+
+2. **Build Process**:
+   - Uses Node.js v20.x
+   - Installs dependencies using `npm ci`
+   - Runs linting checks
+   - Builds the project
+   - Executes page rendering test suite
+
+### Key Features
+- Automated testing with Jest
+- Linting with ESLint
+- Type checking with TypeScript
+- Build verification
+
+## Deployment
+The application is deployed on Vercel, which provides seamless integration with Next.js applications. The deployment is automated through GitHub Actions, ensuring that any changes pushed to the main branch are automatically deployed to production.
+
+## Timeframe and Work Log
+Total Time Spent: ~3 hours
+
+| Date       | Time Spent | Task Description | Notes / Challenges |
+|------------|------------|------------------|-------------------|
+| 2025-04-05 | 0.25h       | Project and Github repo setup | Auto installation using create-next-app, initial commit; design what the website should look like |
+| 2025-04-05 | 0.25h       | Prepare mock data and image assets | Initially planned to use CMS to store data to simulate backend database but because of the limited time, used local JSON file instead. |
+| 2025-04-05 | 1.5h      | Complete simple UI and next.js backend API to fetch data | Modular components; responsive style; fetching data should support query params|
+| 2025-04-06 | 0.5h       | Set up CI/CD pipeline with GitHub Actions; deploy website | Custom YAML config from scratch; Vercel is a good choice to deploy this project. |
+| 2025-04-06 | 0.25h      | Added unit tests and configured test step in pipeline | Basic rendering tests for meal page |
+| 2025-04-07 | 0.25h      | Final polish/bugfix + writing documentation | Reviewed and documented full process |
+
+## Notes on Iterative Approach
+
+Frequent Commits: I made small, descriptive commits at each significant development stage to track progress.
+
+Modular Development: The project was built in modular components, allowing for easier testing and maintenance. Each component was developed independently and then integrated into the main application.
